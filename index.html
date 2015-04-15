@@ -23,11 +23,16 @@
                 </div>            
                 <div class="col-md-4 animated flipInX" ng-repeat="shell in shells">
                     <div class="shell repeated-item" ng-click="examine(shell)" id="{{shell}}"> 
-                        <img class="img-responsive" src="/shellGameTutorial/img/shell.png">
+                        <img ng-hide="win"class="img-responsive" src="shellGameTutorial/img/shell.png">
                     </div>  
+
                 </div> 
+                <div class="col-md-12 animated fadeInDown" >
+                    <img ng-show="win"class="img-responsive" style="margin:left: 500px;" src="shellGameTutorial/img/pearl.png">
+                </div>
                 <div class="col-md-12 animated fadeInDown">
                     <div class="animated fadeInDown">
+
                         <h2 id="status">Game Status: {{message}}</h2>
                         <div ng-show="win" class="win">
                             <h1 >You Won!!</h1>
