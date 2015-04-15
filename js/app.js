@@ -4,6 +4,7 @@ app.controller('MainController', ['$scope', function($scope){
     $scope.ball = Math.floor(Math.random() * (3 - 1) + 1);
     $scope.message = 'Make Your first Guess!';
     $scope.win = false;
+    $scope.lose = false;
     $scope.guess = 0;
     
     $scope.shells = [1,2,3];
@@ -30,7 +31,7 @@ app.controller('MainController', ['$scope', function($scope){
                 }                
             }else{
                 $scope.message = 'You Lost!';
-                $scope.win = true;
+                $scope.lose = true;
                 $scope.guess = 0;
             }
     };

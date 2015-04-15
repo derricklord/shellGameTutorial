@@ -41,6 +41,12 @@
                                 Play Again
                             </button>
                         </div>
+                        <div ng-show="lose" class="win">
+                            <h1 >You Lost!!</h1>
+                            <button class="btn btn-danger" ng-click="updateGame()">
+                                Play Again
+                            </button>
+                        </div>                        
                     </div>
                     <audio autoplay="autoplay" loop="loop">   
                        <source src="media/reformat.mp3" />  
