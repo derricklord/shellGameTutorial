@@ -15,6 +15,7 @@ app.controller('MainController', ['$scope', function($scope){
         $scope.message = 'Make Your first Guess!';
         $scope.guess = 0;
         $scope.win = false; 
+        $scope.lose = false;
         //alert($scope.ball);
     }
     

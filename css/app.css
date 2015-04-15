@@ -32,6 +32,10 @@ body{
     color: green;
 }
 
+.lose{
+    text-align: center;
+    color: red;
+}
 .shell{
     /*background-image: url('../img/shell.png');
     background-size: cover;
