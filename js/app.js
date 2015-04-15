@@ -20,7 +20,7 @@ app.controller('MainController', ['$scope', function($scope){
     }
     
     $scope.examine = function(shell){
-            if($scope.win === false && $scope.guess < 3){
+            if($scope.win === false && $scope.guess < 2){
                 if(shell === $scope.ball){
                     $scope.message = 'You found the pearl';
                     $scope.win = true;
