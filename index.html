@@ -24,7 +24,7 @@
                 </div>            
                 <div class="col-md-4 animated flipInX" ng-repeat="shell in shells">
                     <div class="shell repeated-item" ng-click="examine(shell)" id="{{shell}}"> 
-                        <img ng-hide="win"class="img-responsive" src="/shellGameTutorial/img/shell.png">
+                        <img ng-if="!win"class="img-responsive" src="/shellGameTutorial/img/shell.png">
                     </div>  
 
                 </div> 
