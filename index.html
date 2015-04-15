@@ -16,19 +16,20 @@
             <header class="row text-center">
 
             </header>
-            <!-- Main Game Section-->
+
+
             <article id="game" class="row text-center" >
                 <div id="gameTitle" class="col-md-12">
                      <h1 id="title" class="animated fadeInDown">Shell Game</h1>
                 </div>            
                 <div class="col-md-4 animated flipInX" ng-repeat="shell in shells">
                     <div class="shell repeated-item" ng-click="examine(shell)" id="{{shell}}"> 
-                        <img ng-hide="win"class="img-responsive" src="shellGameTutorial/img/shell.png">
+                        <img ng-hide="win"class="img-responsive" src="/shellGameTutorial/img/shell.png">
                     </div>  
 
                 </div> 
                 <div class="col-md-12 animated fadeInDown" >
-                    <img ng-show="win"class="img-responsive" style="margin:left: 500px;" src="shellGameTutorial/img/pearl.png">
+                    <img ng-show="win"class="img-responsive" style="margin:left: 500px;" src="/shellGameTutorial/img/pearl.png">
                 </div>
                 <div class="col-md-12 animated fadeInDown">
                     <div class="animated fadeInDown">
